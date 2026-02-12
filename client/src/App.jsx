@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route, useNavigate } from 'react-router-dom';
 import { GraduationCap, ShieldCheck, User, Mail, Lock, ArrowRight } from 'lucide-react';
 import StudentDashboard from './pages/StudentDashboard';
+import StudentProfile from './pages/StudentProfile';
 import TeacherDashboard from './pages/TeacherDashboard';
 import AdminDashboard from './pages/AdminDashboard';
 
@@ -166,6 +167,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Login />} />
         <Route path="/student-dashboard" element={<StudentDashboard />} />
+        <Route path="/student-profile" element={<StudentProfile />} />
         <Route path="/teacher-dashboard" element={<TeacherDashboard />} />
         <Route path="/admin-dashboard" element={<AdminDashboard />} />
       </Routes>
